@@ -4,7 +4,7 @@
 Summary:	GD::Convert Perl module - additional output formats for GD
 Summary(pl):	Modu³ Perla GD::Convert - dodatkowe formaty wyj¶ciowe dla GD
 Name:		perl-GD-Convert
-Version:	1.17
+Version:	1.18
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
