@@ -1,0 +1,15 @@
+--- GD-Convert-2.08/Convert.pm.orig	2003-11-10 23:02:30.000000000 +0100
++++ GD-Convert-2.08/Convert.pm	2003-12-15 01:04:37.115366632 +0100
+@@ -32,11 +32,7 @@
+ 		   ) {
+ 		    undef $as;
+ 		} elsif ($GD::VERSION >= 1.40 && !$installed{$f} && GD::Image->can($f)) {
+-		    $@ = "";
+-		    GD::Image->new->$f();
+-		    if ($@ !~ /libgd was not built with gif support/) {
+-			undef $as;
+-		    }
++		    undef $as
+ 		}
+ 		# No? Then try alternatives
+ 		if (defined $as) {
