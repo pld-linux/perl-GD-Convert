@@ -1,15 +1,20 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GD
 %define		pnam	Convert
 Summary:	GD::Convert Perl module - additional output formats for GD
 Summary(pl):	Modu³ Perla GD::Convert - dodatkowe formaty wyj¶ciowe dla GD
 Name:		perl-GD-Convert
-Version:	2.06
+Version:	2.08
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ffbfb3577a1edd3618dd261bd9e84c8b
+# Source0-md5:	d2112c04694de2dcd6098403abc2af54
+Patch0:		%{name}-nocroak.patch
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-GD
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -29,11 +34,14 @@ kiedy potrzeba dynamicznie tworzyæ obrazy dla Tk.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
