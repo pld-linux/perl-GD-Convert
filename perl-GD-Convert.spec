@@ -32,7 +32,7 @@ kiedy potrzeba dynamicznie tworzyæ obrazy dla Tk.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
