@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	GD
-%define		pnam	Convert
+%define	pdir	GD
+%define	pnam	Convert
 Summary:	GD::Convert Perl module - additional output formats for GD
 Summary(pl):	Modu³ Perla GD::Convert - dodatkowe formaty wyj¶ciowe dla GD
 Name:		perl-GD-Convert
