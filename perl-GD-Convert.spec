@@ -8,12 +8,12 @@
 Summary:	GD::Convert Perl module - additional output formats for GD
 Summary(pl):	Modu³ Perla GD::Convert - dodatkowe formaty wyj¶ciowe dla GD
 Name:		perl-GD-Convert
-Version:	2.08
+Version:	2.11
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d2112c04694de2dcd6098403abc2af54
+# Source0-md5:	cd6a2deeead197517955cf830a880f4e
 Patch0:		%{name}-nocroak.patch
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-GD
