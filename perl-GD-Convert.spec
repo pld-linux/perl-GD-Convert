@@ -16,7 +16,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	cd6a2deeead197517955cf830a880f4e
 Patch0:		%{name}-nocroak.patch
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-GD
 BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	perl-GD
