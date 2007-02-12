@@ -6,7 +6,7 @@
 %define		pdir	GD
 %define		pnam	Convert
 Summary:	GD::Convert Perl module - additional output formats for GD
-Summary(pl):	Modu≥ Perla GD::Convert - dodatkowe formaty wyj∂ciowe dla GD
+Summary(pl.UTF-8):   Modu≈Ç Perla GD::Convert - dodatkowe formaty wyj≈õciowe dla GD
 Name:		perl-GD-Convert
 Version:	2.12
 Release:	2
@@ -28,10 +28,10 @@ GD::Convert is a pure Perl module which provides additional output
 functions for the GD module: ppm and xpm. These formats are useful if
 you need to dynamically create photos for Tk.
 
-%description -l pl
-GD::Convert to modu≥ Perla dodaj±cy obs≥ugÍ dwÛch formatÛw wyj∂ciowych
-do modu≥u GD: ppm i xpm. Te formaty s± przydatne zw≥aszcza wtedy,
-kiedy potrzeba dynamicznie tworzyÊ obrazy dla Tk.
+%description -l pl.UTF-8
+GD::Convert to modu≈Ç Perla dodajƒÖcy obs≈Çugƒô dw√≥ch format√≥w wyj≈õciowych
+do modu≈Çu GD: ppm i xpm. Te formaty sƒÖ przydatne zw≈Çaszcza wtedy,
+kiedy potrzeba dynamicznie tworzyƒá obrazy dla Tk.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
