@@ -6,7 +6,7 @@
 %define		pdir	GD
 %define		pnam	Convert
 Summary:	GD::Convert Perl module - additional output formats for GD
-Summary(pl.UTF-8):   Moduł Perla GD::Convert - dodatkowe formaty wyjściowe dla GD
+Summary(pl.UTF-8):	Moduł Perla GD::Convert - dodatkowe formaty wyjściowe dla GD
 Name:		perl-GD-Convert
 Version:	2.12
 Release:	2
