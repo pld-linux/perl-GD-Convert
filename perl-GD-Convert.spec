@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_with	tests	# perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GD
@@ -8,13 +8,13 @@
 Summary:	GD::Convert Perl module - additional output formats for GD
 Summary(pl.UTF-8):	Moduł Perla GD::Convert - dodatkowe formaty wyjściowe dla GD
 Name:		perl-GD-Convert
-Version:	2.13
+Version:	2.16
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/GD/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d5291ea2ab054d7728054f623f0c425c
+# Source0-md5:	33f66279d4520456f0fe052d07690689
 Patch0:		%{name}-nocroak.patch
 URL:		http://search.cpan.org/dist/GD-Convert/
 BuildRequires:	perl-GD
