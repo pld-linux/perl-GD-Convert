@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	GD
 %define		pnam	Convert
 Summary:	GD::Convert Perl module - additional output formats for GD
